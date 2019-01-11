@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1547174201404.000,
+    "dirty" : false,
+    "encoding" : "CP936",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1B1DF5CB",
+    "lastKnownWriteTime" : 1547122305,
+    "last_content_update" : 1547122305,
+    "path" : "C:/Users/Administrator/Desktop/R package/StatComp18057/R/cvm.stat.R",
+    "project_path" : "R/cvm.stat.R",
+    "properties" : {
+        "cursorPosition" : "27,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

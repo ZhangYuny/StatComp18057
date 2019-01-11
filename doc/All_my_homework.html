@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="author" content="Yunyun Zhang" />
+
+<meta name="date" content="2019-01-11" />
+
+<title>All_my_homework</title>
+
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+
+
+<link href="data:text/css;charset=utf-8,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23header%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%20code%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">All_my_homework</h1>
+<h4 class="author"><em>Yunyun Zhang</em></h4>
+<h4 class="date"><em>2019-01-11</em></h4>
+
+
+
+<div id="homework-2018-09-14" class="section level2">
+<h2>Homework-2018-09-14</h2>
+</div>
+<div id="question" class="section level2">
+<h2>Question</h2>
+<p>Write a .Rmd file to implement at least three examples of different types in the above books (texts, numerical results, tables, and figures).</p>
+</div>
+<div id="answer" class="section level2">
+<h2>Answer</h2>
+</div>
+<div id="example1" class="section level2">
+<h2>example1</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+y &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)
+<span class="kw">plot</span>(x, y, <span class="dt">xlab=</span><span class="st">&quot;Ten random values&quot;</span>, <span class="dt">ylab=</span><span class="st">&quot;Ten other values&quot;</span>, <span class="dt">xlim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>), <span class="dt">ylim=</span><span class="kw">c</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>), <span class="dt">pch=</span><span class="dv">21</span>, <span class="dt">col=</span><span class="st">&quot;black&quot;</span>, <span class="dt">bg=</span><span class="st">&quot;black&quot;</span>, <span class="dt">bty=</span><span class="st">&quot;l&quot;</span>, <span class="dt">tcl=</span><span class="fl">0.4</span>, <span class="dt">main=</span><span class="st">&quot;How to customize a plot with R&quot;</span>, <span class="dt">las=</span><span class="dv">1</span>, <span class="dt">cex=</span><span class="fl">1.5</span>)</code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="example2" class="section level2">
+<h2>example2</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(<span class="st">&quot;InsectSprays&quot;</span>)
+aov.spray &lt;-<span class="st"> </span><span class="kw">aov</span>(<span class="kw">sqrt</span>(count) <span class="op">~</span><span class="st"> </span>spray, <span class="dt">data =</span> InsectSprays)
+aov.spray</code></pre></div>
+<pre><code>## Call:
+##    aov(formula = sqrt(count) ~ spray, data = InsectSprays)
+## 
+## Terms:
+##                    spray Residuals
+## Sum of Squares  88.43787  26.05798
+## Deg. of Freedom        5        66
+## 
+## Residual standard error: 0.6283453
+## Estimated effects may be unbalanced</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(aov.spray)</code></pre></div>
+<pre><code>##             Df Sum Sq Mean Sq F value Pr(&gt;F)    
+## spray        5  88.44  17.688    44.8 &lt;2e-16 ***
+## Residuals   66  26.06   0.395                   
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+<div id="example3" class="section level2">
+<h2>example3</h2>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">data</span>(<span class="st">&quot;women&quot;</span>)
+fit &lt;-<span class="st"> </span><span class="kw">lm</span>(weight <span class="op">~</span><span class="st"> </span>height, <span class="dt">data=</span>women)
+<span class="kw">summary</span>(fit)</code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = weight ~ height, data = women)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -1.7333 -1.1333 -0.3833  0.7417  3.1167 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) -87.51667    5.93694  -14.74 1.71e-09 ***
+## height        3.45000    0.09114   37.85 1.09e-14 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 1.525 on 13 degrees of freedom
+## Multiple R-squared:  0.991,  Adjusted R-squared:  0.9903 
+## F-statistic:  1433 on 1 and 13 DF,  p-value: 1.091e-14</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">women<span class="op">$</span>weight</code></pre></div>
+<pre><code>##  [1] 115 117 120 123 126 129 132 135 139 142 146 150 154 159 164</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">fitted</span>(fit)</code></pre></div>
+<pre><code>##        1        2        3        4        5        6        7        8 
+## 112.5833 116.0333 119.4833 122.9333 126.3833 129.8333 133.2833 136.7333 
+##        9       10       11       12       13       14       15 
+## 140.1833 143.6333 147.0833 150.5333 153.9833 157.4333 160.8833</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">residuals</span>(fit)</code></pre></div>
+<pre><code>##           1           2           3           4           5           6 
+##  2.41666667  0.96666667  0.51666667  0.06666667 -0.38333333 -0.83333333 
+##           7           8           9          10          11          12 
+## -1.28333333 -1.73333333 -1.18333333 -1.63333333 -1.08333333 -0.53333333 
+##          13          14          15 
+##  0.01666667  1.56666667  3.11666667</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">plot</span>(women<span class="op">$</span>height, women<span class="op">$</span>weight, <span class="dt">xlab =</span> <span class="st">&quot;Height (in inches)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Weight (in pounds)&quot;</span>)
+<span class="kw">abline</span>(fit)</code></pre></div>
+<p><img src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="homework-2018-09-21" class="section level2">
+<h2>Homework-2018-09-21</h2>
+</div>
+<div id="question1" class="section level2">
+<h2>Question1</h2>
+<p>A discrete random variable <span class="math inline">\(X\)</span> has probability mass function</p>
+<table>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(p(x)\)</span></td>
+<td>0.1</td>
+<td>0.2</td>
+<td>0.2</td>
+<td>0.2</td>
+<td>0.3</td>
+</tr>
+</tbody>
+</table>
+<p>Use the inverse transform method to generate a random sample of size 1000 from the distribution of <span class="math inline">\(X\)</span>. Construct a relative frequency table and compare the empirical with the theoretical probabilities. Repeat using the R sample function.</p>
+</div>
+<div id="answer1" class="section level2">
+<h2>Answer1</h2>
+<p>First, we use the inverse transform method to generate a random sample from the distribution of <span class="math inline">\(X\)</span>. and construct a relative frequency table, then we calculate the ratio between frequency and theoretical probability.Answer</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>); p &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">0.1</span>,<span class="fl">0.2</span>,<span class="fl">0.2</span>,<span class="fl">0.2</span>,<span class="fl">0.3</span>)
+    cp &lt;-<span class="st"> </span><span class="kw">cumsum</span>(p); m &lt;-<span class="st"> </span><span class="dv">1000</span>; r &lt;-<span class="st"> </span><span class="kw">numeric</span>(m)
+    r1 &lt;-<span class="st"> </span>x[<span class="kw">findInterval</span>(<span class="kw">runif</span>(m),cp)<span class="op">+</span><span class="dv">1</span>]
+    ct1 &lt;-<span class="st"> </span><span class="kw">as.vector</span>(<span class="kw">table</span>(r1));
+    f1&lt;-<span class="kw">rbind</span>(x,ct1<span class="op">/</span><span class="kw">sum</span>(ct1));<span class="kw">rownames</span>(f1)&lt;-<span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,<span class="st">&quot;frequency&quot;</span>)
+    f1</code></pre></div>
+<pre><code>##            [,1]  [,2]  [,3]  [,4]  [,5]
+## x         0.000 1.000 2.000 3.000 4.000
+## frequency 0.111 0.208 0.182 0.183 0.316</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">    ct1<span class="op">/</span><span class="kw">sum</span>(ct1)<span class="op">/</span>p</code></pre></div>
+<pre><code>## [1] 1.110000 1.040000 0.910000 0.915000 1.053333</code></pre>
+<p>Now we use the R sample function to generate a random sample of size 1000 from the distribution of <span class="math inline">\(X\)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">123</span>); n&lt;-<span class="dv">1000</span>
+r2&lt;-<span class="kw">sample</span>(<span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>),n,<span class="dt">replace=</span>T,<span class="kw">c</span>(<span class="fl">0.1</span>,<span class="fl">0.2</span>,<span class="fl">0.2</span>,<span class="fl">0.2</span>,<span class="fl">0.3</span>))
+ct2&lt;-<span class="kw">as.vector</span>(<span class="kw">table</span>(r2))
+f2&lt;-<span class="kw">rbind</span>(x,ct2<span class="op">/</span><span class="kw">sum</span>(ct2));<span class="kw">rownames</span>(f2)&lt;-<span class="kw">c</span>(<span class="st">&quot;x&quot;</span>,<span class="st">&quot;frequency&quot;</span>)
+f2</code></pre></div>
+<pre><code>##            [,1]  [,2]  [,3]  [,4]  [,5]
+## x         0.000 1.000 2.000 3.000 4.000
+## frequency 0.092 0.203 0.211 0.198 0.296</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">ct2<span class="op">/</span><span class="kw">sum</span>(ct2)<span class="op">/</span>p</code></pre></div>
+<pre><code>## [1] 0.9200000 1.0150000 1.0550000 0.9900000 0.9866667</code></pre>
+</div>
+<div id="question2" class="section level2">
+<h2>Question2</h2>
+<p>Write a function to generate a random sample of size n from the <span class="math inline">\(Beta(a, b)\)</span> distribution by the acceptance-rejection method. Generate a random sample of size 1000 from the <span class="math inline">\(Beta(3,2)\)</span> distribution. Graph the histogram of the sample with the theoretical <span class="math inline">\(Beta(3,2)\)</span> density superimposed.</p>
+</div>
+<div id="answer2" class="section level2">
+<h2>Answer2</h2>
+<p><span class="math inline">\(Beta(3,2)\)</span> with pdf <span class="math inline">\(f(x)=12x^2(1-x),~0&lt;x&lt;1\)</span>. Let <span class="math inline">\(c=3\)</span> and <span class="math inline">\(g(x)=x,~0&lt;x&lt;1\)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">123</span>)
+n &lt;-<span class="st"> </span><span class="dv">1000</span>;j&lt;-k&lt;-<span class="dv">0</span>;y &lt;-<span class="st"> </span><span class="kw">numeric</span>(n)
+<span class="cf">while</span> (k <span class="op">&lt;</span><span class="st"> </span>n) {
+u &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dv">1</span>)
+j &lt;-<span class="st"> </span>j <span class="op">+</span><span class="st"> </span><span class="dv">1</span>
+x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dv">1</span>) <span class="co">#random variate from g</span>
+<span class="cf">if</span> (<span class="dv">4</span><span class="op">*</span>x<span class="op">^</span><span class="dv">2</span><span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>x) <span class="op">&gt;</span><span class="st"> </span>u) {
+<span class="co">#we accept x</span>
+k &lt;-<span class="st"> </span>k <span class="op">+</span><span class="st"> </span><span class="dv">1</span>
+y[k] &lt;-<span class="st"> </span>x
+}
+}
+j    <span class="co"># #(experiments) for n random numbers </span></code></pre></div>
+<pre><code>## [1] 3037</code></pre>
+<p>Quantile-quantile plot for</p>
+</div>
+
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

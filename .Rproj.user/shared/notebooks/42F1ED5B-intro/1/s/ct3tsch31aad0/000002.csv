@@ -1,0 +1,7 @@
+"0","tm2 <- microbenchmark("
+"0","  vR = gibbsR(1e4, 10),"
+"0","  vC = gibbsC(1e4, 10)"
+"0",")"
+"2","Error in microbenchmark(vR = gibbsR(10000, 10), vC = gibbsC(10000, 10)) : 
+  could not find function ""microbenchmark""
+"
