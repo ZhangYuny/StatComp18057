@@ -20,7 +20,6 @@
 #' }
 #' @export
 Tn <- function(z, ix, sizes,k) {
-  use_package("RANN")
   n1 <- sizes[1]
   n2 <- sizes[2]
   n <- n1 + n2

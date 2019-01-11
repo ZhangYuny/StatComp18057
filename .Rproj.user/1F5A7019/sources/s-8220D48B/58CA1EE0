@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "0",
     "id" : "58CA1EE0",
-    "lastKnownWriteTime" : 1547189836,
-    "last_content_update" : 1547189836096,
+    "lastKnownWriteTime" : 1547198339,
+    "last_content_update" : 1547198339981,
     "path" : "C:/Users/Administrator/Desktop/R package/StatComp18057/R/Tn.stat.R",
     "project_path" : "R/Tn.stat.R",
     "properties" : {
-        "cursorPosition" : "24,16",
-        "scrollLine" : "0"
+        "cursorPosition" : "18,12",
+        "scrollLine" : "8"
     },
     "relative_order" : 3,
     "source_on_save" : false,
