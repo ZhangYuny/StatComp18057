@@ -5,7 +5,6 @@ Version: 0.1.0
 Author: Yunyun Zhang
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: Computational functions of some statistics
-Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 License: GPL(> = 2)
 Encoding: UTF-8
@@ -14,4 +13,16 @@ RoxygenNote: 6.1.1
 URL: https://github.com/ZhangYuny/StatComp18057
 BugReports: https://github.com/ZhangYuny/StatComp18057/issues
 Imports: 
-    RANN
+    RANN,
+    microbenchmark,
+    rmarkdown,
+    MASS,
+    evir,
+    boot,
+    DAAG,
+    survival,
+    energy,
+    Ball,
+    bootstrap,
+    stats,
+    knitr
